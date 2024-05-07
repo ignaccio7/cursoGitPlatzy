@@ -172,6 +172,20 @@ Y SELECCIONAMOS DOS RAMAS QUE QUEREMOS COMPARAR
 COMO ELIMINAMOS UNA RAMA REMOTA QUE AGREGAMOS
 git remote remove origin
 
+-> El git checkout rompia con la ideologia UNIX que era hacer una cosa por comando y el checkout hacia muchas cosas
+
+PRA CAMBIAR DE RAMA
+git switch develop
+git checkout develop <- este es antiguo ya
+
+PARA CREAR UNA NUEVA RAMA Y CAMBIAR A ELLA
+git switch -c name-of-new-branch
+git checkout -b name-of-new-branch
+
+PARA RESTAURAR UN ARCHIVO
+git restore file.txt
+git checkout -- file.txt
+
 CUANDO QUEREMOS TENER LA MISMA CUENTA EN 2 DISPOSITIVOS EN LA RUTA DE NUESTRAS LLAVES SSH SE DEBE AÑADIR UN ARCHIVO config con las cuentas que necesitemos
 Host github-account1
   Hostname github.com
