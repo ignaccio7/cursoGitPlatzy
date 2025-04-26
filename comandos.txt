@@ -201,6 +201,14 @@ origin  git@github-account1:<usegithub>/copy-la-velada-web.git (fetch)
 de esta manera podremos hacer push desde otro dispositivo
 
 
+Submodulos en git 
+Para agregar un nuevo repositorio dentro de otro ya existente
+Primero creamos la carpeta dentro de la carpeta que ya tiene un repositorio en git y luego hacemos un git init en este y creamos y subimos el repo nuevo a github
+luego en la carpeta raiz de donde teniamos ya el repositorio anterior ya creado agregamos el submodulo
+git submodule add <URL-del-repositorio> carpeta/carpetaOtroRepo
+luego
+git add .gitmodules carpeta/carpetaOtroRepo
+git commit -m "Agrega carpetaOtroRepo como submódulo"
+git push
 
-
-
+Y así el repositorio principal ahora rastrea el submódulo, pero ambos repositorios siguen siendo independientes y pueden tener sus propios remotos y ramas
